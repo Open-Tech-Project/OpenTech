@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
         </h1>
         
         <p className="max-w-2xl mx-auto text-xl text-slate-400 mb-10 leading-relaxed animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
-          Empowering developers and creators with open-source tools designed for privacy, performance, and transparency.
+          Empowering users with open-source tools designed for privacy, performance, and transparency.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s' }}>
