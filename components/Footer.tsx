@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
             <a href="https://fluxer.gg/Wxw5vtTC" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="Fluxer">
               <span className="sr-only">Fluxer</span>
               <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-3.5 12c-.83 0-1.5-.67-1.5-1.5S7.67 9 8.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3.5 0c-.83 0-1.5-.67-1.5-1.5S11.67 9 12.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3.5 0c-.83 0-1.5-.67-1.5-1.5S15.67 9 16.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.8 9.2c-.2 0-.4.1-.5.3-.5.8-1.1 1.5-1.8 2.1-.7.6-1.5 1.1-2.4 1.4-.9.3-1.8.5-2.8.5s-1.9-.2-2.8-.5c-.9-.3-1.7-.8-2.4-1.4-.7-.6-1.3-1.3-1.8-2.1-.1-.2-.3-.3-.5-.3s-.4.1-.5.3c-.1.2-.1.4 0 .6.6.9 1.3 1.7 2.1 2.4.8.7 1.7 1.2 2.7 1.6 1 .4 2 .6 3.1.6s2.1-.2 3.1-.6c1-.4 1.9-.9 2.7-1.6.8-.7 1.5-1.5 2.1-2.4.1-.2.1-.4 0-.6-.1-.2-.3-.3-.5-.3zm-1 3.6c-.2 0-.4.1-.5.3-.5.8-1.1 1.5-1.8 2.1-.7.6-1.5 1.1-2.4 1.4-.9.3-1.8.5-2.8.5s-1.9-.2-2.8-.5c-.9-.3-1.7-.8-2.4-1.4-.7-.6-1.3-1.3-1.8-2.1-.1-.2-.3-.3-.5-.3s-.4.1-.5.3c-.1.2-.1.4 0 .6.6.9 1.3 1.7 2.1 2.4.8.7 1.7 1.2 2.7 1.6 1 .4 2 .6 3.1.6s2.1-.2 3.1-.6c1-.4 1.9-.9 2.7-1.6.8-.7 1.5-1.5 2.1-2.4.1-.2.1-.4 0-.6-.1-.2-.3-.3-.5-.3z"/>
               </svg>
             </a>
             <a href="https://x.com/_OpenTec" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="X (Twitter)">
@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 text-center md:text-left text-sm text-slate-600">
-          <p>All projects featured are made by The OpenTech Project.</p>
+          <p>All project featured are made by The OpenTech Project.</p>
         </div>
       </div>
     </footer>
