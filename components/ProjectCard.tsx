@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Star, ExternalLink, Download, Clock, AlertCircle, Smartphone, Monitor, Globe, TabletSmartphone } from 'lucide-react';
 import { ProjectData, RepoDetails } from '../types';
-import { fetchRepoDetails, fetchLatestRelease } from '../services/gitlabService';
+import { fetchRepoDetails, fetchLatestRelease } from '../services/githubService';
 
 interface ProjectCardProps {
   project: ProjectData;
@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
              ) : (
                 <div className="flex items-center gap-1 text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded-full text-xs font-medium border border-yellow-400/20">
                   <Star size={12} fill="currentColor" />
-                  <span>{repo?.star_count ?? 0}</span>
+                  <span>{repo?.stargazers_count ?? 0}</span>
                 </div>
              )}
              
@@ -151,7 +151,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                <div className="flex gap-3">
                   <a 
-                    href={repo?.web_url || `https://gitlab.com/Open-Tech-Project/${project.key === 'opentube' ? 'OpenTube' : 'OpenBoard'}`} 
+                    href={repo?.html_url} 
                     target="_blank" 
                     rel="noreferrer"
                     className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
