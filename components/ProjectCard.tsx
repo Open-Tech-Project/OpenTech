@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Star, ExternalLink, Download, Clock, AlertCircle, Smartphone, Monitor, Globe, TabletSmartphone } from 'lucide-react';
+import { Star, ExternalLink, Download, Clock, AlertCircle, Smartphone, Monitor, Globe, TabletSmartphone } from 'lucide-react';
 import { ProjectData, RepoDetails } from '../types';
-import { fetchRepoDetails, fetchLatestRelease } from '../services/githubService';
+import { fetchRepoDetails, fetchLatestRelease } from '../services/gitlabService';
 
 interface ProjectCardProps {
   project: ProjectData;
@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
              ) : (
                 <div className="flex items-center gap-1 text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded-full text-xs font-medium border border-yellow-400/20">
                   <Star size={12} fill="currentColor" />
-                  <span>{repo?.stargazers_count ?? 0}</span>
+                  <span>{repo?.star_count ?? 0}</span>
                 </div>
              )}
              
@@ -151,12 +151,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                <div className="flex gap-3">
                   <a 
-                    href={repo?.html_url} 
+                    href={repo?.web_url || `https://gitlab.com/Open-Tech-Project/${project.key === 'opentube' ? 'OpenTube' : 'OpenBoard'}`} 
                     target="_blank" 
                     rel="noreferrer"
                     className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
                   >
-                    <Github size={18} />
+                    <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-current">
+                      <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.74 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+                    </svg>
                     <span>Source</span>
                   </a>
                </div>
