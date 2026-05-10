@@ -151,7 +151,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                <div className="flex gap-3">
                   <a 
-                    href={repo?.html_url} 
+                    href={`https://gitlab.com/Open-Tech-Project/${project.key === 'opentube' ? 'OpenTube' : 'OpenBoard'}`} 
                     target="_blank" 
                     rel="noreferrer"
                     className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
