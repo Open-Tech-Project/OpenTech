@@ -11,7 +11,7 @@ const PROJECTS: ProjectData[] = [
     key: 'opentube',
     displayName: 'OpenTube',
     repoName: 'Open-Tech-Project/OpenTube',
-    iconUrl: 'https://raw.githubusercontent.com/Open-Tech-Project/OpenTech_files/main/179259430.png',
+    iconUrl: 'https://gitlab.com/Open-Tech-Project/OpenTech_files/-/raw/17f7303f2203bab4671e9103d316f2d95c30c27e/179259430.png',
     customDescription: 'A versatile and lightweight open-source video platform client. Experience content without compromise.',
     features: ['Video Streaming', 'Privacy Focused', 'Ad-free Experience'],
     platforms: ['Android', 'iOS', 'HarmonyOS']
@@ -20,7 +20,7 @@ const PROJECTS: ProjectData[] = [
     key: 'openboard',
     displayName: 'OpenBoard',
     repoName: 'Open-Tech-Project/OpenBoard',
-    iconUrl: 'https://raw.githubusercontent.com/Open-Tech-Project/OpenTech_files/main/Group%20335.png',
+    iconUrl: 'https://gitlab.com/Open-Tech-Project/OpenTech_files/-/raw/17f7303f2203bab4671e9103d316f2d95c30c27e/Group%20335.png',
     customDescription: 'An intuitive, open-source keyboard application designed for customization and efficiency.',
     features: ['Custom Layouts', 'High Performance'],
     platforms: ['HarmonyOS 6+'],
@@ -41,7 +41,7 @@ const App: React.FC = () => {
             <div className="text-center mb-16 animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Projects</h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                Explore our core open-source initiatives. Check out the code, download the latest releases, or contribute on GitHub.
+                Explore our core open-source initiatives. Check out the code, download the latest releases, or contribute on GitLab.
               </p>
             </div>
 
