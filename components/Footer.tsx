@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -35,9 +34,11 @@ export const Footer: React.FC = () => {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
                </svg>
             </a>
-            <a href="https://gitlab.com/users/Open-Tech-Project/projects" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
-              <span className="sr-only">GitHub</span>
-              <Github size={24} />
+            <a href="https://gitlab.com/users/Open-Tech-Project/projects" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="GitLab">
+              <span className="sr-only">GitLab</span>
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
+                <path d="M12 23.999l-4.208-12.948H1.629L12 .977l10.371 10.074h-6.163L12 23.999z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -48,4 +49,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
