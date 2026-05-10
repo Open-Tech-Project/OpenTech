@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code2, Globe, Shield, Github } from 'lucide-react';
+import { ArrowRight, Code2, Globe, Shield } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -31,9 +31,11 @@ export const Hero: React.FC = () => {
           <a href="#projects" className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-lg transition-all shadow-lg shadow-purple-500/25 flex items-center gap-2 transform hover:-translate-y-0.5">
             View Projects <ArrowRight size={18} />
           </a>
-          <a href="https://github.com/Open-Tech-Project" target="_blank" rel="noreferrer" className="px-8 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-sm text-white font-semibold rounded-lg border border-slate-700 transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
-            <Github size={18} />
-            Our GitHub page
+          <a href="https://gitlab.com/users/Open-Tech-Project/projects" target="_blank" rel="noreferrer" className="px-8 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-sm text-white font-semibold rounded-lg border border-slate-700 transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+            <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-current">
+              <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.74 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+            </svg>
+            Our GitLab page
           </a>
         </div>
 
