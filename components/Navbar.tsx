@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export const Navbar: React.FC = () => {
@@ -37,14 +37,16 @@ export const Navbar: React.FC = () => {
               Projects
             </a>
             <a 
-              href="https://github.com/Open-Tech-Project" 
+              href="https://gitlab.com/users/Open-Tech-Project/projects" 
               target="_blank" 
               rel="noopener noreferrer" 
               onClick={() => setIsMenuOpen(false)}
               className="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"
             >
-              <Github size={18} />
-              GitHub
+              <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-current">
+                <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.74 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+              </svg>
+              GitLab
             </a>
           </div>
         </div>
