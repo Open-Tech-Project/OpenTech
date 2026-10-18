@@ -29,7 +29,7 @@ const PROJECTS: ProjectData[] = [
   {
     key: 'openllama',
     displayName: 'OpenLLama',
-    repoName: 'Open-Tech-Project/openllama',
+    repoName: 'Open-Tech-Project/OpenLLama',
     iconUrl: 'https://gitlab.com/Open-Tech-Project/OpenTech_files/-/raw/main/Vector__2_.png',
     customDescription: 'A local and cloud LLM client bringing powerful AI models and inference to HarmonyOS.',
     features: ['Local Inference', 'Cloud LLM Integration', 'Privacy First'],
