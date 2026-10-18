@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Star, ExternalLink, Download, Clock, AlertCircle, Smartphone, Monitor, Globe, TabletSmartphone } from 'lucide-react';
+import { Star, ExternalLink, Download, Clock, AlertCircle, Smartphone, Monitor, Globe } from 'lucide-react';
 import { ProjectData, RepoDetails } from '../types';
 import { fetchRepoDetails, fetchLatestRelease } from '../services/githubService';
 
@@ -51,15 +51,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   const getPlatformIcon = (platform: string) => {
     const p = platform.toLowerCase();
-    if (p.includes('android')) return <Smartphone size={14} />;
-    if (p.includes('ios')) return <Smartphone size={14} />;
-    if (p.includes('harmony')) return <Smartphone size={14} />;
+    if (p.includes('android') || p.includes('ios') || p.includes('harmony')) return <Smartphone size={14} />;
     if (p.includes('web')) return <Globe size={14} />;
     if (p.includes('desktop')) return <Monitor size={14} />;
     return <ExternalLink size={14} />;
   };
 
-  // Determine language to display (custom or fetched)
   const language = project.customLanguage || repo?.language;
 
   return (
@@ -84,7 +81,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
              )}
              
-             {/* Platform Badges */}
              <div className="flex flex-wrap justify-end gap-1 max-w-[150px]">
                 {project.platforms.map(p => (
                     <div key={p} className="flex items-center gap-1 text-blue-300 bg-blue-950/40 px-2 py-1 rounded-full text-xs border border-blue-800/50 whitespace-nowrap">
@@ -151,7 +147,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                <div className="flex gap-3">
                   <a 
-                    href={`https://gitlab.com/Open-Tech-Project/${project.key === 'opentube' ? 'OpenTube' : 'OpenBoard'}`} 
+                    href={`https://gitlab.com/${project.repoName}`} 
                     target="_blank" 
                     rel="noreferrer"
                     className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
