@@ -25,6 +25,16 @@ const PROJECTS: ProjectData[] = [
     features: ['Custom Layouts', 'High Performance'],
     platforms: ['HarmonyOS 6+'],
     customLanguage: 'ArkTS'
+  },
+  {
+    key: 'openllama',
+    displayName: 'OpenLLama',
+    repoName: 'Open-Tech-Project/openllama',
+    iconUrl: 'https://gitlab.com/Open-Tech-Project/OpenTech_files/-/raw/main/Vector__2_.png',
+    customDescription: 'A local and cloud LLM client bringing powerful AI models and inference to HarmonyOS.',
+    features: ['Local Inference', 'Cloud LLM Integration', 'Privacy First'],
+    platforms: ['HarmonyOS 7+'],
+    customLanguage: 'ArkTS / C++'
   }
 ];
 
@@ -45,7 +55,7 @@ const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.8s' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.8s' }}>
               {PROJECTS.map((project) => (
                 <ProjectCard key={project.key} project={project} />
               ))}
